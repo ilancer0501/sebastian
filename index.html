@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sebastian's Portfolio</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="description"
+      content="A nice and minimal looking portfolio of a programmer/developer named Sebastian"
+    />
+    <meta property="og:title" content="Sebastian's Portfolio" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="A nice and minimal looking portfolio of a programmer/developer named Sebastian"
+    />
+    <meta property="og:image" content="./img/avatar-symbol.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="darkreader-lock" />
+
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main-960px.css" />
+    <link rel="stylesheet" href="./css/3rd-party/fontello-embedded.css" />
+
+    <link rel="stylesheet" href="./css/3rd-party/flexboxgrid.min.css" />
+
+    <script src="./js/main.js"></script>
+    <script src="./js/matrix-text-effect.js"></script>
+  </head>
+
+  <body>
+    <div class="background-wrapper">
+      <img
+        id="background-image-blurred"
+        src="./img/background.avif"
+        alt="background-image"
+      />
+    </div>
+    <div class="root">
+      <div class="intro-wrapper">
+        <link rel="stylesheet" href="./css/intro.css" />
+        <p id="introWelcomeTitle">Hello there!</p>
+        <span>
+          <p id="introWelcomeSubtitle">Welcome to my portfolio.</p>
+          <span id="introCursor" style="opacity: 0">▉</span>
+        </span>
+        <p id="introDescription">
+          💻 Results-driven Senior Frontend Engineer with 10+ years of experience designing and developing highperformance, user-centric web applications. Expertise in React, Vue.js, TypeScript, JavaScript (ES6+),
+          Next.js, Redux, Tailwind CSS, and GraphQL. Proven ability to build scalable, maintainable, and accessible
+          front-end architectures that enhance user experience and performance. Passionate about component-driven
+          development, modern UI frameworks, and optimizing web applications for speed and responsiveness. Strong
+          advocate for Agile methodologies, TDD, and DevOps best practices.
+        </p>
+        <script defer src="./js/typewriter-intro.js"></script>
+        <div class="intro-cards-wrapper">
+          <div id="intro-top">
+            <div class="profile-wrapper">
+              <img
+                alt="Profile picture"
+                id="introProfilePic"
+                src="./img/avatar.jpg"
+              />
+              <p id="introFullName" data-value="Sebastian Dornes">Sebastian Dornes</p>
+              <script>
+                displayInMatrixEffect(document.getElementById("introFullName"));
+                document.getElementById("introFullName").onmouseover = (
+                  event
+                ) => {
+                  displayInMatrixEffect(event.target);
+                };
+              </script>
+            </div>
+
+            <div class="socials-wrapper">
+              <p class="intro-label">Find me</p>
+              <a
+                class="icon-mail-alt intro-socialLink"
+                href="mailto:dornessebastian@gmail.com"
+                onClick="javascript:window.open('mailto:dornessebastian@gmail.com', 'mail');event.preventDefault()"
+                target="_blank"
+                >Email</a
+              >
+              <a
+                class="icon-whatsapp intro-socialLink"
+                href="https://wa.me/542926411613"
+                target="_blank"
+                >WhatsApp</a
+              >
+              <a
+                class="icon-linkedin-squared intro-socialLink"
+                href="https://www.linkedin.com/in/sebastian-dornes-3931a984/"
+                target="_blank"
+                >Linkedin</a
+              >
+              <a
+                class="icon-github-circled intro-socialLink"
+                href="https://github.com/pegasus430/"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="intro-tech-stack-wrapper">
+            <div class="intro-tech-languages">
+              <p class="intro-label">I'm currently working with</p>
+              <div class="intro-programming-lang-grid row">
+
+                <div class="intro-programming-lang-item">
+                  <img alt="JavaScript" src="./img/icons/js.svg" />
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="TypeScript" src="./img/icons/ts.svg" />
+                  <span>TypeScript</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="TypeScript" src="./img/icons/vue_js.png" />
+                  <span>Vue</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="TypeScript" src="./img/icons/react.png" />
+                  <span>React</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="TypeScript" src="./img/icons/next_js.png" />
+                  <span>Next</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="TypeScript" src="./img/icons/tailwind_css.png" />
+                  <span>Tailwind CSS</span>
+                </div>
+
+                
+                <div class="intro-programming-lang-item">
+                  <img alt="NodeJS" src="./img/icons/nodejs.svg" />
+                  <span>NodeJS</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Java" src="./img/icons/java.svg" />
+                  <span>Java</span>
+                </div>
+                
+                <div class="intro-programming-lang-item">
+                  <img alt="Python" src="./img/icons/python.svg" />
+                  <span>Python</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Python" src="./img/icons/django.png" />
+                  <span>Django</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Python" src="./img/icons/c.png" />
+                  <span>C#</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Python" src="./img/icons/_net_core.png" />
+                  <span>.NET</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Git" src="./img/icons/aws.png" />
+                  <span>AWS</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Git" src="./img/icons/git.svg" />
+                  <span>Git</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Linux" src="./img/icons/tux.svg" />
+                  <span>Linux</span>
+                </div>
+
+                <div class="intro-programming-lang-item">
+                  <img alt="Linux" src="./img/icons/figma.png" />
+                  <span>Figma</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-about-me-wrapper cv-linktree-holder">
+            <a
+              href="https://drive.google.com/file/d/1NvaocPxjmqqLx76H2dI2T9YQC92-HDEH/view?usp=drive_link"
+              target="_blank"
+              class="intro-programming-lang-item cv-linktree-item"
+            >
+              <img
+                alt="Resume"
+                src="./img/icons/curriculum-vitae-svgrepo-com.svg"
+              />
+              <span>View My Resume</span>
+              <i class="icon-link-ext"></i>
+            </a>
+          </div>
+
+          <div class="intro-about-me-wrapper">
+            <p class="intro-label">About me</p>
+            <div class="intro-about-me-items-holder row">
+              <div class="intro-about-me-card-item">
+                <p label>Gender:</p>
+                <i class="icon-male"></i>
+                <span value>Male</span>
+              </div>
+              <div class="intro-about-me-card-item">
+                <p label>Birth:</p>
+                <i class="icon-birthday"></i>
+                <span value>March 21th</span>
+              </div>
+              <div class="intro-about-me-card-item">
+                <p label>Country:</p>
+                <i class="icon-globe"></i>
+                <span value>Argentina</span>
+              </div>
+              <div class="intro-about-me-card-item">
+                <p label>Languages:</p>
+                <i class="icon-language"></i>
+                <span value>English, Spanish, Japanese</span>
+              </div>
+            </div>
+
+            <div class="intro-about-me-items-holder row">
+              <div class="intro-about-me-card-item">
+                <p label>Education:</p>
+                <i class="icon-graduation-cap"></i>
+                <span value>B.S.Degree | Wentworth Institute of Technology – Boston, MA</span>
+                <br/>
+                <i class="icon-graduation-cap"></i>
+                <span value>B.S.Degree | Universidad Torcuato Di Tella | Buenos Aires</span>
+              </div>
+              <div class="intro-about-me-card-item">
+                <p label>Hobbies:</p>
+                <i class="icon-steam"></i>
+                <span value>Reading Book, Thinking New Idea</span>
+              </div>
+              <div class="intro-about-me-card-item">
+                <p label>Goals:</p>
+                <i class="icon-bullseye"></i>
+                <span value>Top talented software engineer </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <link rel="stylesheet" href="./css/content.css" />
+
+        <div style="display: flex">
+          <p class="content-label" style="flex: 1">My Projects</p>
+        </div>
+
+        <div
+          class="worked-projects-container row"
+          style="justify-content: center"
+        >
+          <a
+            target="_blank"
+            href="https://www.frontrushfundraising.com/"
+            class="project-item"
+          >
+            <img
+              alt="Front Rush Fundraising"
+              class="project-item-banner"
+              src="./img/project-banners/frontrushfundraising.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title"
+                >Front Rush Fundraising</span
+              >
+              <span class="project-item-description"
+                >Our smart content engine will instantly create a totally customized fundraising campaign that is ready to launch.
+              </span>
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.maverickdesign.com"
+            class="project-item"
+          >
+            <img
+              alt="Maverick Design"
+              class="project-item-banner"
+              src="./img/project-banners/maverickdesign.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title"
+                > Maverick Design </span
+              >
+              <span class="project-item-description"
+                >Maverick is a boutique design company with a unique signature elegance that resonates across a wide range of styles.
+              </span>
+            </div>
+          </a>
+
+          <a
+            class="project-item"
+            target="_blank"
+            href="https://www.tuscanyleather.it/"
+          >
+            <img
+              alt="Tuscany Leather"
+              class="project-item-banner"
+              src="./img/project-banners/tuscanyleather.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Tuscany Leather</span>
+              <span class="project-item-description">
+                Wide range of Italian leather goods. Choose our leather bags, briefcases, luggage, leather backpacks.
+              </span>
+            </div>
+          </a>
+
+          <a class="project-item" target="_blank" href="https://www.emporix.com/">
+            <img
+              alt="Emporix"
+              class="project-item-banner"
+              src="./img/project-banners/emporix.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Emporix</span>
+              <span class="project-item-description">
+                Emporix provides the most flexible commerce technology for manufacturing and retail.
+              </span>
+            </div>
+          </a>
+
+          <a
+            class="project-item"
+            target="_blank"
+            href="https://www.sheltonai.com/"
+          >
+            <img
+              alt="Shelton AI"
+              class="project-item-banner"
+              src="./img/project-banners/sheltonai.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title"
+                >Shelton AI</span
+              >
+              <span class="project-item-description"
+                >Shelton AI automated our back-office, cutting costs and freeing up resources for strategic tasks.</span
+              >
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.wedgewood-inc.com"
+            class="project-item"
+          >
+            <img
+              alt="Wedgewood Inc"
+              class="project-item-banner"
+              src="./img/project-banners/wedgewood.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Wedgewood Inc.</span>
+              <span class="project-item-description"
+                >The affiliate brokerage firm that specializes in the listing and sale of residential properties in multiple states.
+              </span>
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.mondoconv.it/"
+            class="project-item"
+          >
+            <img
+              alt="Mondo Convenienza"
+              class="project-item-banner"
+              src="./img/project-banners/mondoconv.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Mondo Convenienza</span>
+              <span class="project-item-description">
+                Mondo Convenienza, home furnishings at unbeatable prices.</span
+              >
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://southwickstorage.co.uk"
+            class="project-item"
+          >
+            <img
+              alt="Southwick Storage"
+              class="project-item-banner"
+              src="./img/project-banners/southwickstorage.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Southwick Storage</span>
+              <span class="project-item-description">
+                Southwick Storage, Easy online booking and instant 24 hour access.</span
+              >
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://moonmagic.com/"
+            class="project-item"
+          >
+            <img
+              alt="Moon Magic"
+              class="project-item-banner"
+              src="./img/project-banners/moonmagic.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Moon Magic</span>
+              <span class="project-item-description">
+                Unique Jewelry That'll Make You Feel Extra Beautiful.</span
+              >
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://triginta.rs/"
+            class="project-item"
+          >
+            <img
+              alt="Triginta Equestrian"
+              class="project-item-banner"
+              src="./img/project-banners/triginta.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Triginta Equestrian</span>
+              <span class="project-item-description">
+                Triginta is a Belgrade-based digital agency specializing in branding, design, and development. They help businesses stand out by creating strong visual identities, intuitive digital products, and impactful web experiences.</span
+              >
+            </div>
+          </a>
+          <a
+            target="_blank"
+            href="https://ambarrestaurant.com/"
+            class="project-item"
+          >
+            <img
+              alt="Ambar Restaurant"
+              class="project-item-banner"
+              src="./img/project-banners/ambarrestaurant.png"
+            />
+            <div class="project-item-text-holder">
+              <span class="project-item-title">Ambar Restaurant</span>
+              <span class="project-item-description">
+                Explore the rich, savory food of the Balkan Peninsula by trying a little bit of everything - all for one flat price.</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+</html>
